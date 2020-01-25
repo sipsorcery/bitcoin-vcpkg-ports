@@ -1,3 +1,4 @@
+````
 VCPKG_INSTALL_PATH: 'C:\tools\vcpkg\installed'
 VCPKG_PORTS_REPO: 'https://github.com/sipsorcery/bitcoin-vcpkg-ports.git'
 VCPKG_PORTS_DIR: 'c:\tools\vcpkg-ports'
@@ -11,3 +12,4 @@ vcpkg install --triplet $env:PLATFORM-windows-static --overlay-ports=$env:VCPKG_
 # Deliberately running the same command again to print out confirmation that all packages are installed.
 vcpkg install --triplet $env:PLATFORM-windows-static --overlay-ports=$env:VCPKG_PORTS_DIR $env:PACKAGES.split()
 vcpkg integrate install
+````
